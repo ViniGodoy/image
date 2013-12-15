@@ -1,3 +1,13 @@
+/*===========================================================================
+COPYRIGHT 2013 Vinícius G. Mendonça ALL RIGHTS RESERVED.
+
+This software cannot be copied, stored, distributed without
+Vinícius G. Mendonça prior authorization.
+
+This file was made available on https://github.com/ViniGodoy and it
+is free to be redistributed or used under Creative Commons license 2.5 br:
+http://creativecommons.org/licenses/by-sa/2.5/br/
+============================================================================*/
 package br.com.vinigodoy.image.gui;
 
 import br.com.vinigodoy.image.ImageLoader;
@@ -779,7 +789,7 @@ public class MainFrame extends JFrame {
 
         try {
             String fileName = getSaveDialog().getSelectedFile().getName();
-            String format = null;
+            String format;
             int index = fileName.lastIndexOf(".");
             if (index == -1) {
                 fileName = fileName + ".png";
@@ -829,6 +839,7 @@ public class MainFrame extends JFrame {
         try {
             frame.setSelected(true);
         } catch (PropertyVetoException e) {
+            throw new RuntimeException(e);
         }
         setTitle(frame);
 
@@ -914,7 +925,7 @@ public class MainFrame extends JFrame {
         System.exit(0);
     }
 
-    public static final boolean isImage(String fileName) {
+    public static boolean isImage(String fileName) {
         for (String format : SUPPORTED_FORMATS)
             if (fileName.endsWith("." + format))
                 return true;
@@ -1414,8 +1425,6 @@ public class MainFrame extends JFrame {
 
     /**
      * This method initializes this
-     *
-     * @return void
      */
     private void initialize() {
         this.setSize(800, 600);

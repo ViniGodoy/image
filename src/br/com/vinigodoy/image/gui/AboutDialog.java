@@ -1,3 +1,13 @@
+/*===========================================================================
+COPYRIGHT 2013 Vinícius G. Mendonça ALL RIGHTS RESERVED.
+
+This software cannot be copied, stored, distributed without
+Vinícius G. Mendonça prior authorization.
+
+This file was made available on https://github.com/ViniGodoy and it
+is free to be redistributed or used under Creative Commons license 2.5 br:
+http://creativecommons.org/licenses/by-sa/2.5/br/
+============================================================================*/
 package br.com.vinigodoy.image.gui;
 
 import javax.swing.*;
@@ -10,9 +20,7 @@ public class AboutDialog extends JDialog {
     private JLabel lblAbout = null;
     private JLabel lblLogo = null;
 
-    /**
-     * @param owner
-     */
+
     public AboutDialog(Frame owner) {
         super(owner);
         initialize();
@@ -21,8 +29,6 @@ public class AboutDialog extends JDialog {
 
     /**
      * This method initializes this
-     *
-     * @return void
      */
     private void initialize() {
         this.setSize(409, 199);

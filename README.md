@@ -6,6 +6,9 @@ A Simple image processing tool. This tool was made with educational purposes. It
 easy to study and change. Also, the application allow students to test and combine several different image operations
 with ease.
 
+When using this application it's recommended to use -XMX parameter to increase VM's memory limit:
+ java -Xmx2048m
+
 Image operations:
 - Rotation (90, 180 and 270 degrees)
 - Vertical and horizontal flipping

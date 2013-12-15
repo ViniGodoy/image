@@ -1,3 +1,13 @@
+/*===========================================================================
+COPYRIGHT 2013 Vinícius G. Mendonça ALL RIGHTS RESERVED.
+
+This software cannot be copied, stored, distributed without
+Vinícius G. Mendonça prior authorization.
+
+This file was made available on https://github.com/ViniGodoy and it
+is free to be redistributed or used under Creative Commons license 2.5 br:
+http://creativecommons.org/licenses/by-sa/2.5/br/
+============================================================================*/
 package br.com.vinigodoy.image.gui;
 
 import br.com.vinigodoy.image.util.Util;
@@ -22,7 +32,6 @@ public class ImagemIFrame extends JInternalFrame {
     private JScrollPane srclImagem = null;
     private static int counter = 1;
     private int zoom = 4;
-    private String title;
 
     /**
      * This is the xxx default constructor
@@ -72,8 +81,6 @@ public class ImagemIFrame extends JInternalFrame {
 
     /**
      * This method initializes this
-     *
-     * @return void
      */
     private void initialize() {
         this.setSize(300, 200);

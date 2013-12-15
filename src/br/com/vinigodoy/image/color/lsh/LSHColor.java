@@ -1,3 +1,14 @@
+/*===========================================================================
+COPYRIGHT 2013 Vinícius G. Mendonça ALL RIGHTS RESERVED.
+
+This software cannot be copied, stored, distributed without
+Vinícius G. Mendonça prior authorization.
+
+This file was made available on https://github.com/ViniGodoy and it
+is free to be redistributed or used under Creative Commons license 2.5 br:
+http://creativecommons.org/licenses/by-sa/2.5/br/
+============================================================================*/
+
 package br.com.vinigodoy.image.color.lsh;
 
 import br.com.vinigodoy.image.util.Util;
@@ -138,11 +149,9 @@ public class LSHColor implements Comparable<LSHColor> {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null)
-            return false;
-        if (obj.getClass() != getClass())
-            return false;
-        return compareTo((LSHColor) obj) == 0;
+        return obj != null &&
+                obj.getClass() == getClass() &&
+                compareTo((LSHColor) obj) == 0;
     }
 
     @Override
@@ -151,16 +160,16 @@ public class LSHColor implements Comparable<LSHColor> {
     }
 
     /**
-     * A ordena��o leva em considera��o a ordem lexicogr�fica.
+     * Sorting considers the lexicographic ordering
      */
     @Override
     public int compareTo(LSHColor o) {
         /*
-		 * A dist�ncia em L e S leva em considera��o uma escala de 0 at� 255.
-		 * Assim, garantimos que haver� distribui��o levando em considera��o o
+         * A distancia em L e S leva em consideracao uma escala de 0 ate 255.
+		 * Assim, garantimos que havera distribuicao levando em consideracao o
 		 * segundo e terceiro componentes da tripla LSH (sem a escala, como L �
-		 * float, existiriam "infinitos" poss�veis valores de L, o que aumenta
-		 * consideravelmente a chance da ordena��o parar no primeiro if).
+		 * float, existiriam "infinitos" possiveis valores de L, o que aumenta
+		 * consideravelmente a chance da ordenacao parar no primeiro if).
 		 */
         if (intL() < o.intL())
             return -1;
@@ -173,8 +182,8 @@ public class LSHColor implements Comparable<LSHColor> {
             return 1;
 
 		/*
-		 * A dist�ncia em H � calculada com base na dist�ncia relativa entre h e
-		 * a vari�vel est�tica h0.
+         * A distancia em H e calculada com base na distancia relativa entre h e
+		 * a variavel estatica h0.
 		 */
         if (hueDist(h) < hueDist(o.h))
             return -1;
@@ -183,7 +192,7 @@ public class LSHColor implements Comparable<LSHColor> {
         return 0;
     }
 
-    private float hueDist(float h2) {
+    private float hueDist(float h) {
         if (h - h0 < Math.PI)
             return h - h0;
         return TWOPI - h - h0;
