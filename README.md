@@ -34,8 +34,8 @@ Morphological operators:
 
 ![Color morphology](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash2/317062_1964235916858_1651335977_n.jpg)
  1. Center: Original image scaled to 1/2
- 2. Top left: Erosion with cross kernal in 7x
- 3. Superior right: Dilation with cross kernal in 7x
+ 2. Top left: Erosion with cross kernel in 7x
+ 3. Superior right: Dilation with cross kernel in 7x
  4. Bottom left: Opening with cross with 7x
  5. Bottom right: Closing with cross with 7x
 
@@ -60,7 +60,7 @@ Morphological operators:
 ![Miscelaneous](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/287228_1836338199495_8089762_o.jpg)
  1. Top left: Original image
  2. Top right: Edge detection with Sobel operator
- 3. Bottom left: Morphological opening with 2 iteration
+ 3. Bottom left: Morphological opening with 2 iterations
  4. Bottom right: Morphological closing with 2 iterations
  5. Center: Equalization
 
