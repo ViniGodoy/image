@@ -32,7 +32,7 @@ Morphological operators:
 
 ### Color Morphology
 
-![Color morphology](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash2/317062_1964235916858_1651335977_n.jpg)
+![Color morphology](https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/317062_1964235916858_1651335977_n.jpg?oh=2626bc79191be2f2390d5e3b7b4a499a&oe=56DB3EC5&__gda__=1461592206_f0731b51668748be02a110e85f430764)
  1. Center: Original image scaled to 1/2
  2. Top left: Erosion with cross kernel in 7x
  3. Superior right: Dilation with cross kernel in 7x
@@ -41,7 +41,7 @@ Morphological operators:
 
 ### Morphological reconstruction
 
-![Morphological reconstruction](https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash2/310260_1964246717128_1334630950_n.jpg)
+![Morphological reconstruction](https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/310260_1964246717128_1334630950_n.jpg?oh=37617e70a70ed5c3d4b70b8e85245cf7&oe=56E47373&__gda__=1458108692_f36a1a4fa78e6c06de268bd8d85da45e)
  1. Top left: Original image
  2. Top right: Image negation
  3. Bottom left: Border pixels extraction
@@ -50,14 +50,14 @@ Morphological operators:
 
 ### Borders by erosion
 
-![Borders by Erosion](https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/301235_1964252037261_1233256122_n.jpg)
+![Borders by Erosion](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/301235_1964252037261_1233256122_n.jpg?oh=30506040486a1570c94a88c091488761&oe=571F09C8&__gda__=1457848175_ef1a38c00af2cef4224ed392702a3f8d)
  1. Top left: Original image
  2. Too right: Morphological erosion
  3. Bottom left: Subtracted original (1) minus eroded (2)
 
 ### Other operations
 
-![Miscelaneous](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/287228_1836338199495_8089762_o.jpg)
+![Miscelaneous](https://scontent-gru1-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/287228_1836338199495_8089762_o.jpg)
  1. Top left: Original image
  2. Top right: Edge detection with Sobel operator
  3. Bottom left: Morphological opening with 2 iterations
